@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+body { background-color: lightblue;}
+</style>
+<body>
+<div class="container">
+<h1 style="color:green"><i>Welcome!</i></h1>
+<h2>Hi <b>{{user.username}} </b> welcome. </h2>
+    <form method="POST" action="/myapp/logout/">
+        {% csrf_token %}
+        <div class="container-fluid">
+    <p>.</p>
+  </div>
+  <h4>Have a good day. </h4>
+  <h4>Ericsson is awaesome! </h4>
+
+
+        <input type="submit" class="btn btn-primary" value="Logout">
+        </div>
+
+    </form>
+
+</body>
+</html>
